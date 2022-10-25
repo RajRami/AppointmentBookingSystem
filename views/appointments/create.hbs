@@ -1,0 +1,28 @@
+<h1>Make a New Appointment</h1>
+<form method="post">
+    <fieldset>
+        <label for="name" class="col-2">Name:*</label>
+        <input name="name" id="Name" placeholder="Enter Your Name" required>
+    </fieldset>
+    <fieldset>
+        <label for="email" class="col-2">Email:*</label>
+        <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+    </fieldset>
+    <fieldset>
+        <label for="date" class="col-2">Date:*</label>
+        <input type="date" name="date" id="date" required>
+    </fieldset>
+    <fieldset>
+        <label for="reason" class="col-2">Reason:*</label>
+        <select name="reason" id="reason" required>
+            <option value="Checkup">Checkup</option>
+            <option value="Follow-Up">Follow-Up</option>
+            <option value="Emergency">Emergency</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <label for="confirmed" class="col-2">Confirmed:</label>
+        <input type="checkbox" name="confirmed" id="confirmed">
+    </fieldset>
+    <button class="btn btn-primary offset-2">Save</button>
+</form>

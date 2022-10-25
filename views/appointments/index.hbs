@@ -1,0 +1,28 @@
+<h1>Appointments</h1>
+<a class="btn btn-primary" href="/appointments/create">Make a new appointment</a>
+<table class="table">
+    <thead class="table-dark">
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Date</th>
+            <th scope="col">Reason</th>
+            <th scope="col">Confirmed</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each appointments}}
+        <tr>
+            <th>{{this.name}}</th>
+            <th>{{this.email}}</th>
+            <th>{{this.date}}</th>
+            <th>{{this.reason}}</th>
+            <th>{{this.confirmed}}</th>
+            <th><a href="/appointments/edit/{{this._id}}">Edit</a> |
+                <a href="/appointments/delete/{{this._id}}" class="text-danger" onclick="return confirmDelete()">Delete</a>
+            </th>
+        </tr>
+    {{/each}}
+    </tbody>
+</table>
