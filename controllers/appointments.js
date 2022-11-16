@@ -68,7 +68,7 @@ router.get('/edit/:_id', (req, res) => {
     })
 })
 
-//POST: /appointments/edit => Process the form submission and update the appointment details
+//POST: /appointments/edit/abcd1234 => Process the form submission and update the appointment details
 router.post('/edit/:_id', (req, res) => {
     Appointment.findByIdAndUpdate({_id:req.params._id}, req.body, null, (err, appointment) => {
         if (err) {

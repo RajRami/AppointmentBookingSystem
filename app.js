@@ -34,15 +34,15 @@ app.use('/', indexRouter);
 app.use('/appointments', appointments);
 
 // hbs helper function to pre-select correct dropdown option
-const hbs = require('hbs')
+// const hbs = require('hbs')
 
-hbs.registerHelper("setChecked", function getSelectedValue (currentVal, selectedVal){
-  let selectedProperty = ''
-  if (currentVal == selectedVal) {
-    selectedProperty = ' checked'
-  }
-  return new hbs.SafeString(`<input type="checkbox" name="confirmed" id="confirmed" value="${selectedProperty}">`)
-});
+// hbs.registerHelper("setChecked", function getSelectedValue (currentVal, selectedVal){
+//   let selectedProperty = ''
+//   if (currentVal == selectedVal) {
+//     selectedProperty = ' checked'
+//   }
+//   return new hbs.SafeString(`<input type="checkbox" name="confirmed" id="confirmed" value="${selectedProperty}">`)
+// });
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
