@@ -21,10 +21,6 @@
     <li class="nav-item">
       <a class="nav-link" href="/appointments">Appointments</a>
     </li>
-    <div class="search visibility-resp">
-      <input class="input-nav" type="text" name="search" id="search" placeholder="Search here">
-      <button id="searchBar" class="btn-sm">Search</button>
-    </div>
   </ul>
   <main>
     {{{body}}}
@@ -33,12 +29,6 @@
     <p class="p-footer">Copyright &copy; 2022 | Raj Rami - 200489571 - All rights reserved.</p>
   </footer>
   <script src="/javascripts/script.js"></script>
-  <script type="text/javascript">
-        document.getElementById('searchBar').onsubmit = function() {
-            window.location = 'http://www.google.com/search?q=site:https://appointment-booking-system.onrender.com/ ' + document.getElementById('search').value;
-            return false;
-        }
-    </script>
 </body>
 
 </html>

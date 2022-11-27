@@ -22,7 +22,7 @@ router.get('/', (req, res) => {
 //GET: /appointments/create => Display the form to make an appointment
 router.get('/create', (req, res) => {
     res.render('appointments/create', {
-        title: 'Make an Appointment',
+        title: 'Make an Appointment'
     })
 })
 
